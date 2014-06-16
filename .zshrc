@@ -46,3 +46,4 @@ zstyle ':completion:*:default' menu select
 
 
 alias ls="ls -G"
+alias tmux="tmux -2"
