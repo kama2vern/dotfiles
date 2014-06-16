@@ -1,3 +1,6 @@
+" -----------------------------------------------------------------------
+" plugin settings
+" -----------------------------------------------------------------------
 set nocompatible
 filetype off
 
@@ -13,19 +16,24 @@ NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim' }
 filetype plugin indent on
 filetype indent on
 
+" -----------------------------------------------------------------------
+" indent settings
+" -----------------------------------------------------------------------
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set cindent
 set showmatch
-
 set scrolloff=10
 
 set foldmethod=indent
 set foldlevel=99
-
 set clipboard+=unnamed
 
+" -----------------------------------------------------------------------
+"  display settings
+" -----------------------------------------------------------------------
 syntax on
 
 set t_Co=256
