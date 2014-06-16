@@ -10,6 +10,7 @@ class DotfilesInstaller
     *.swp
     Rakefile
     README.md
+    iterm_theme.itermcolors
   ]
 
   def self.install

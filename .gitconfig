@@ -15,6 +15,11 @@
     interactive = auto
 
 [core]
+    editor       = /usr/bin/vim
     autocrlf     = input
     quotepath    = false
     excludesfile = ~/.gitexcludes # 自分の環境でのみ除外したいファイルを書く
+[alias]
+	st = status
+	br = branch
+	co = checkout
