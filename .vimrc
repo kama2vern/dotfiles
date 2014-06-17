@@ -43,3 +43,4 @@ set showcmd
 set title
 
 set laststatus=2
+set foldmethod=marker
