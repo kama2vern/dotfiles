@@ -47,3 +47,6 @@ zstyle ':completion:*:default' menu select
 
 alias ls="ls -G"
 alias tmux="tmux -2"
+
+PROMPT='[%F{blue}%B%n%b%f]$ '
+RPROMPT='[%F{green}%d%f]'
