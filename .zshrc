@@ -47,6 +47,29 @@ zstyle ':completion:*:default' menu select
 
 alias ls="ls -G"
 alias tmux="tmux -2"
+alias o="git ls-files | peco | xargs open"
 
-PROMPT='[%F{blue}%B%n%b%f]$ '
-RPROMPT='[%F{green}%d%f]'
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
+
+PROMPT='[%F{blue}%n%b%f][%F{green}%d%f]$ '
+
+
+#######################################
+# peco hitory
+#######################################
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
