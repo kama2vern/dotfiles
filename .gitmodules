@@ -1,0 +1,3 @@
+[submodule "ghq_dir"]
+	path = ghq_dir
+	url = git://github.com/motemen/ghq.git

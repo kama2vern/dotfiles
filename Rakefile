@@ -6,6 +6,7 @@ class DotfilesInstaller
     ..
     .git
     .gitignore
+    .gitmodules
     .DS_Store
     *.swp
     Rakefile
