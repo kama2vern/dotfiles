@@ -52,7 +52,7 @@ alias o="git ls-files | peco | xargs open"
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
-PROMPT='[%F{blue}%n%b%f][%F{green}%d%f]$ '
+PROMPT='[%F{blue}%n%b%f][%F{green}%~%f]$ '
 
 
 #######################################
