@@ -44,10 +44,11 @@ REPORTTIME=1
 # 続けて <Tab> を押すと候補からパス名を選択できるようになる
 zstyle ':completion:*:default' menu select
 
-
 alias ls="ls -G"
 alias tmux="tmux -2"
 alias o="git ls-files | peco | xargs open"
+alias e='cd $(ghq list -p | peco)'
+alias trc='cd ~/Projects/cocos2dx_proj/HeartLight/'
 
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
@@ -94,3 +95,5 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+

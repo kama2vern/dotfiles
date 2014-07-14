@@ -1,6 +1,6 @@
 [user]
-	name = Mitsushige Komiya
-
+    name  = Mitsushige Komiya
+    email = mkomiya.s@gmail.com
 [include]
     path = .gitconfig.local
 
