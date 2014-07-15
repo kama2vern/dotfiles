@@ -14,6 +14,9 @@ NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim' }
 
+call unite#set_profile('default', 'ignorecase', 1)
+call unite#set_profile('default', 'smartcase', 1)
+
 filetype plugin indent on
 filetype indent on
 
@@ -44,3 +47,10 @@ set title
 
 set laststatus=2
 set foldmethod=marker
+
+" Unite
+let g:unite_enable_start_insert=1
+let g:unite_source_history_yank_enable=1
+let g:unite_source_file_mru_limit=200
+
+nnoremap <C-o> :<C-u>Unite file<CR>
