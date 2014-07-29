@@ -43,14 +43,13 @@ syntax on
 set t_Co=256
 set number
 set showcmd
-set title
+set notitle
 
 set laststatus=2
 set foldmethod=marker
 
+" -----------------------------------------------------------------------
 " Unite
+" -----------------------------------------------------------------------
 let g:unite_enable_start_insert=1
-let g:unite_source_history_yank_enable=1
-let g:unite_source_file_mru_limit=200
-
 nnoremap <C-o> :<C-u>Unite file<CR>
