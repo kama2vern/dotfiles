@@ -84,9 +84,11 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
+# peco git branch
+alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
+
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT=/Users/S_Wyvern/Development/cocos2d-x-3.2/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# for octopress
-alias -g new_post='noglob rake new_post'
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

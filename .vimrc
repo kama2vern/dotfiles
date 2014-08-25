@@ -34,7 +34,9 @@ set scrolloff=10
 set foldmethod=indent
 set foldlevel=99
 set clipboard+=unnamed
+set backspace=start,eol,indent
 
+nnoremap <C-p> :<C-u>set paste<CR>
 " -----------------------------------------------------------------------
 "  display settings
 " -----------------------------------------------------------------------
@@ -52,4 +54,5 @@ set foldmethod=marker
 " Unite
 " -----------------------------------------------------------------------
 let g:unite_enable_start_insert=1
-nnoremap <C-o> :<C-u>Unite file<CR>
+nnoremap <C-o> :<C-u>Unite file_rec<CR>
+nnoremap <C-b> :<C-u>Unite buffer<CR>
