@@ -16,7 +16,7 @@
 
 [core]
     editor       = /usr/bin/vim
-    autocrlf     = input
+	autoCRLF = false
     quotepath    = false
     excludesfile = ~/.gitexcludes # 自分の環境でのみ除外したいファイルを書く
 [alias]

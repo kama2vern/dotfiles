@@ -85,9 +85,15 @@ bindkey '^r' peco-select-history
 
 # peco git branch
 alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
+alias -g A='`git status -s | peco | sed -e "s/^[ M]*//g"`'
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=$HOME/Development/cocos2d-x-3.2/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=$HOME/Development/cocos2d-x-3.3/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# for boot2docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/S_Wyvern/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
