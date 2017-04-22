@@ -62,7 +62,6 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 PROMPT='%F{green}[%n]%f%F{blue}[%~]%f${vcs_info_msg_0_}$ '
 
-
 #######################################
 # peco hitory
 #######################################
@@ -84,10 +83,6 @@ bindkey '^r' peco-select-history
 
 # peco git branch
 alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
-alias -g A='`git status -s | peco | sed -e "s/^[ M]*//g"`'
-
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=$HOME/Development/cocos2d-x-3.3/tools/cocos2d-console/bin
 
 # PATH
 if [[ -z $TMUX ]]; then
