@@ -50,7 +50,6 @@ alias o="git ls-files | peco | xargs open"
 alias e='cd $(ghq list -p | peco)'
 
 export GOPATH=~/go
-export PATH=$PATH:$GOPATH/bin
 
 # プロンプト
 autoload -Uz vcs_info
@@ -89,11 +88,14 @@ alias -g A='`git status -s | peco | sed -e "s/^[ M]*//g"`'
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT=$HOME/Development/cocos2d-x-3.3/tools/cocos2d-console/bin
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
+
+# PATH
+if [[ -z $TMUX ]]; then
+    export PATH=$PATH:$GOPATH/bin
+    export PATH=$COCOS_CONSOLE_ROOT:$PATH
+    export PATH="$HOME/.rbenv/bin:$PATH"
+fi
 eval "$(rbenv init -)"
 
-# for boot2docker
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/S_Wyvern/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+export EDITOR=vim
+eval "$(direnv hook zsh)"
