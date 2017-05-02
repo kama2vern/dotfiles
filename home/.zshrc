@@ -1,3 +1,8 @@
+# autoloads
+fpath=("$HOME/.zsh/functions" $fpath)
+autoload -Uz compinit
+autoload -Uz my_copyline
+
 # --------------------------------------------------------------------------
 # zsh settings
 # --------------------------------------------------------------------------
@@ -80,6 +85,9 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+compinit
+my_copyline
 
 # peco git branch
 alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
