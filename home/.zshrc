@@ -56,6 +56,7 @@ alias tmux="tmux -2"
 alias o="git ls-files | peco | xargs open"
 alias e='cd $(ghq list -p | peco)'
 alias s='git status --short'
+alias v='atom'
 
 ## function
 a() { git add . $1 --all; git status --short }
