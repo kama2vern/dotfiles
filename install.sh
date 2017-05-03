@@ -26,7 +26,7 @@ pushd ${workspace}/dotfiles-master > /dev/null
 brew bundle
 
 # clone dotfiles to link symbols if not exists
-if [[ ! -d ${dotfiles_dir} ]]
+if [[ ! -d ${dotfiles_dir} ]]; then
   mkdir -p ${src_root}
   git clone git@github.com:kama2vern/dotfiles.git ${dotfiles_dir}
 fi
