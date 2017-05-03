@@ -11,7 +11,9 @@ pushd ${linked_files} > /dev/null
 
 # Create symbols
 for dotfile in `find . -maxdepth 1 ! -name "." | sed 's/^.\///g'`; do
-  ln -sv ${linked_files}/${dotfile} ${user_root}/${dotfile}
+  if [[ ! -L ${user_root}/${dotfile} ]]; then
+    ln -sv ${linked_files}/${dotfile} ${user_root}/${dotfile}
+  fi
 done
 
 # Pop to original path
