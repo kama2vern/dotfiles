@@ -24,8 +24,11 @@ brew 'tree'
 brew 'ttyrec'
 brew 'vim', args: ['with-lua']
 brew 'sanemat/font/ricty', args: ['vim-powerline', 'with-powerline']
-cask 'iterm2'
+cask '1password'
 cask 'atom'
 cask 'docker'
+cask 'dropbox'
+cask 'google-chrome'
+cask 'iterm2'
 cask 'night-owl'
 cask 'sequel-pro'
