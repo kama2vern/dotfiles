@@ -25,6 +25,7 @@ brew 'ttyrec'
 brew 'vim', args: ['with-lua']
 brew 'sanemat/font/ricty', args: ['vim-powerline', 'with-powerline']
 cask '1password'
+cask 'alfred'
 cask 'atom'
 cask 'docker'
 cask 'dropbox'
