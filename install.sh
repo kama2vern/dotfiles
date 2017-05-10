@@ -22,6 +22,9 @@ pushd ${workspace}/dotfiles-master > /dev/null
 # Install homebrew
 ./install-homebrew.sh
 
+# Update homebrew
+brew update
+
 # Run installer
 brew bundle
 
