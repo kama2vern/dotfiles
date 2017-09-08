@@ -68,6 +68,9 @@ m() { git commit -m "$*" }
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Python
+export PATH="$HOME/.pyenv/shims:$PATH"
+
 # direnv
 eval "$(direnv hook zsh)"
 
