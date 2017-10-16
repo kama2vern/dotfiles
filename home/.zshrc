@@ -60,10 +60,10 @@ alias o="git ls-files | peco | xargs open"
 alias e='cd $(ghq list -p | peco)'
 alias s='git status --short'
 alias v='atom'
+alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
 
 ## function
 a() { git add . $1 --all; git status --short }
-B() { git branch | peco | sed -e "s/^\*[ ]*//g" }
 k() { git grep -l $1 | xargs gsed -i -r -e "s;$1;$2;g" }
 m() { git commit -m "$*" }
 
