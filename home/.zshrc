@@ -49,6 +49,9 @@ PROMPT="%{${fg[yellow]}%}$%{${reset_color}%} "
 
 # completion
 zstyle ':completion:*:default' menu select
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+autoload -U compinit
+compinit -u
 
 # alias
 alias ls="ls -G"
