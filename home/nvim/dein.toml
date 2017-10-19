@@ -1,0 +1,46 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# ==================================================
+# colors
+# ==================================================
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+
+# ==================================================
+# basic
+# ==================================================
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+[[plugins]]
+repo = 'Shougo/vimfiler.vim'
+hook_add = '''
+source ~/.config/nvim/plugins/vimfiler.rc.vim
+'''
+
+[[plugins]]
+repo = 'terryma/vim-multiple-cursors'
+
+# ==================================================
+# powerline
+# ==================================================
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+source ~/.config/nvim/plugins/airline.rc.vim
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+depends = 'vim-airline'
+hook_add = '''
+let g:airline_theme='luna'
+'''
+

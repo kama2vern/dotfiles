@@ -27,6 +27,7 @@ export PATH="$HOME/bin:$PATH"
 export EDITOR=vim
 export CLICOLOR=YES
 export GOPATH=$HOME/go
+export TERM=xterm-256color
 
 HISTFILE=~/.zsh_history
 HISTSIZE=100000

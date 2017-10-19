@@ -1,0 +1,58 @@
+# ==================================================
+# complement
+# ==================================================
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = 'context_filetype.vim'
+if = "has('nvim')"
+on_i = 1
+hook_source = '''
+source ~/.config/nvim/plugins/deoplete.rc.vim
+'''
+
+[[plugins]]
+repo = 'zchee/deoplete-go'
+depends = 'deoplete.nvim'
+if = "has('nvim')"
+on_ft = 'go'
+build = 'make'
+hook_source = '''
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+let g:deoplete#sources#go#use_cache = 1
+let g:deoplete#sources#go#json_directory = '~/.cache/deoplete/go/$GOOS_$GOARCH'
+'''
+
+# ==========================================================
+# lang
+# ==========================================================
+
+[[plugins]]
+repo = 'Shougo/neco-vim'
+on_ft = 'vim'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_source = '''
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+'''
+
+[[plugins]]
+repo = 'jodosha/vim-godebug'
+on_ft = 'go'
+depends = 'vim-go'
+
