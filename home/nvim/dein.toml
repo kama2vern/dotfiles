@@ -17,6 +17,9 @@ repo = 'Shougo/unite.vim'
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
+hook_add = '''
+source ~/.config/nvim/plugins/denite.rc.vim
+'''
 
 [[plugins]]
 repo = 'Shougo/vimfiler.vim'

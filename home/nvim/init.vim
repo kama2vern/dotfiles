@@ -53,8 +53,6 @@ set foldlevel=99
 set clipboard+=unnamed
 set backspace=start,eol,indent
 
-nnoremap <C-p> :<C-u>set paste<CR>
-
 " -----------------------------------------------------------------------
 "  display settings
 " -----------------------------------------------------------------------
