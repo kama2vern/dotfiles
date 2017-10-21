@@ -24,7 +24,7 @@ setopt TRANSIENT_RPROMPT
 export LANG=ja_JP.UTF-8
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
-export EDITOR=vim
+export EDITOR=vi
 export CLICOLOR=YES
 export GOPATH=$HOME/go
 export TERM=xterm-256color
@@ -73,10 +73,12 @@ eval "$(rbenv init -)"
 # Python
 export PATH="$HOME/.pyenv/shims:$PATH"
 
+# Go
+export PATH="$GOPATH/bin:$PATH"
+
 # direnv
 eval "$(direnv hook zsh)"
 
 ## local
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-export EDITOR=vi
