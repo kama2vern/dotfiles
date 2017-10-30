@@ -39,6 +39,11 @@ filetype plugin indent on
 syntax enable
 
 " -----------------------------------------------------------------------
+" key binding settings
+" -----------------------------------------------------------------------
+tnoremap <Esc> <C-\><C-n>
+
+" -----------------------------------------------------------------------
 " indent settings
 " -----------------------------------------------------------------------
 set tabstop=2
@@ -52,6 +57,7 @@ set foldmethod=indent
 set foldlevel=99
 set clipboard+=unnamed
 set backspace=start,eol,indent
+set autowrite
 
 " -----------------------------------------------------------------------
 "  display settings

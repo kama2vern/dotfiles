@@ -30,6 +30,15 @@ source ~/.config/nvim/plugins/vimfiler.rc.vim
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
 
+[[plugins]]
+repo = 'AndrewRadev/splitjoin.vim'
+
+# ==================================================
+# snippet
+# ==================================================
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
 # ==================================================
 # powerline
 # ==================================================
