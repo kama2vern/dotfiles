@@ -33,6 +33,9 @@ repo = 'terryma/vim-multiple-cursors'
 [[plugins]]
 repo = 'AndrewRadev/splitjoin.vim'
 
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+
 # ==================================================
 # snippet
 # ==================================================
