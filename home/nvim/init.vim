@@ -58,6 +58,7 @@ set foldlevel=99
 set clipboard+=unnamed
 set backspace=start,eol,indent
 set autowrite
+set splitbelow
 
 " -----------------------------------------------------------------------
 "  display settings
