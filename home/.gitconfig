@@ -2,23 +2,24 @@
     name  = Mitsushige Komiya
     email = s.wyvern.acespring@gmail.com
 [include]
-    path = .gitconfig.local
+  path = ~/.gitconfig.local
 
 [github]
-    user = MKomiya
+  user = kama2vern
 
 [color]
-    diff        = auto
-    grep        = auto
-    branch      = auto
-    status      = auto
-    interactive = auto
+  diff        = auto
+  grep        = auto
+  branch      = auto
+  status      = auto
+  interactive = auto
 
 [core]
-    editor       = /usr/local/bin/vim
-	autoCRLF = false
-    quotepath    = false
-    excludesfile = ~/.gitexcludes # 自分の環境でのみ除外したいファイルを書く
+  editor       = /usr/local/bin/nvim
+  autoCRLF     = false
+  quotepath    = false
+  excludesfile = ~/.gitexcludes
+
 [alias]
 	st = status
 	br = branch
@@ -26,4 +27,4 @@
 	ci = commit
 
 [ghq]
-    root = ~/src
+  root = ~/src
