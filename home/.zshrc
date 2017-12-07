@@ -66,6 +66,9 @@ a() { git add . $1 --all; git status --short }
 k() { git grep -l $1 | xargs gsed -i -r -e "s;$1;$2;g" }
 m() { git commit -m "$*" }
 
+# Shell Debug
+export PS4='+ (${BASH_SOURCE}:${LINENO}): ${FUNCNAME:+$FUNCNAME(): }'
+
 # Ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
