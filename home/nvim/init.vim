@@ -76,5 +76,7 @@ set foldmethod=marker
 set cursorline
 set mouse=a
 
+autocmd FileType gitcommit DiffGitCached | resize 30
+
 filetype indent on
 

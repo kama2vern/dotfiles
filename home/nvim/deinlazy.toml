@@ -79,3 +79,7 @@ repo = 'jodosha/vim-godebug'
 on_ft = 'go'
 depends = 'vim-go'
 
+[[plugins]]
+repo = 'davidhalter/jedi'
+on_ft = 'python'
+
